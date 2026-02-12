@@ -1,0 +1,22 @@
+.my-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745; /* verde éxito */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.my-alert.show {
+  opacity: 1;
+  transform: translateY(0);
+}
